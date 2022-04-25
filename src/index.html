@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>UlpoMedia</title>
+</head>
+<body>
+
+<!-- NAVBAR -->
+    <nav id="navbar" class="navbar d-none d-lg-flex navbar-expand-lg bg-red justify-content-center w-100">
+            <div class="align-items-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item active px-3">
+                        <a class="nav-link text-white" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" aria-current="page" href="#hero">Juegos</a>
+                    </li>
+                    <li id="logo" class="nav-item px-3">
+                        <a class="nav-link" href="#"><img class="" style="width: 100%" src="../img/assets/Web_Logo.png" alt="" srcset=""></a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" aria-current="page" href="#hero">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" aria-current="page" href="#hero">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+<!-- MOBILE NAVBAR -->
+<nav class="navbar d-lg-none bg-red justify-content-center w-100">
+    <a href="#" class="navbar-brand"><img class="logo" style="width: 80%" src="../img/assets/Web_Logo.png" alt="" srcset=""></a>
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-expanded="false" aria-controls="navbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navCollapse" class="collapse navbar-collapse align-items-center">
+        <ul class="navbar-nav">
+            <li class="nav-item active px-3">
+                <a class="nav-link text-white" aria-current="page" href="#hero">Home</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link text-white" aria-current="page" href="#hero">Juegos</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link text-white" aria-current="page" href="#hero">Quienes Somos</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link text-white" aria-current="page" href="#hero">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- SECCION 1 -  HERO-->
+    <section id="hero" class="container-fluid px-0">
+        <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/assets/SLIDER1_tentativo.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION 2 -  GAMES -->
+    <section id="games" class="container-fluid px-0">
+        <div class="row justify-content-center gx-0">
+            <div class="col-6 d-flex">
+                    <img id="gamesTitle" class="img-fluid" src="../img/assets/GamesTitle.png" alt="" srcset="">
+                </div>
+            </div>
+            <div class="row d-none d-lg-flex justify-content-center mt-lg-5 gx-0">
+                <div class="col-7 d-flex align-items-center">
+                    <img class="img-fluid" style="max-width:30%" src="../img/assets/GAME.png" alt="" srcset="">
+                    <img class="img-fluid" style="max-width:30%" src="../img/assets/GAME.png" alt="" srcset="">
+                    <img class="img-fluid" style="max-width:30%" src="../img/assets/GAME.png" alt="" srcset="">
+                </div>                
+            </div>
+            <div class="row d-none d-lg-flex justify-content-center gx-0">
+                <div class="col-5 d-flex" >
+                    <img style="max-width:50%" src="../img/assets/GAME.png" alt="" srcset="">
+                    <img style="max-width:50%" src="../img/assets/GAME.png" alt="" srcset="">
+                </div>
+            </div>
+            <img id="idolCat" class="img-fluid d-none d-lg-flex" style="max-width:20%" src="../img/assets/Ga,e_Idolcat.png" alt="" srcset="">
+        </div>
+<!-- CAROUSEL2 -->
+        <div class="row justify-content-center d-lg-none mt-lg-5 gx-0">
+            <div class="col-6">
+                <div id="slider2" class="carousel slide" data-bs-ride="carousel">
+                    <ol id="indicators2" class="carousel-indicators">
+                        <li type="button" data-bs-target="#slider2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+                        <li type="button" data-bs-target="#slider2" data-bs-slide-to="1" class="" aria-label="Slide 2"></li>
+                        <li type="button" data-bs-target="#slider2" data-bs-slide-to="2" class="" aria-label="Slide 3"></li>
+                        <li type="button" data-bs-target="#slider2" data-bs-slide-to="3" class="" aria-label="Slide 4"></li>
+                        <li type="button" data-bs-target="#slider2" data-bs-slide-to="4" class="" aria-label="Slide 5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid d-block" src="../img/assets/GAME.png" alt="" srcset="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid d-block" src="../img/assets/GAME.png" alt="" srcset="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid d-block" src="../img/assets/GAME.png" alt="" srcset="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid d-block" src="../img/assets/GAME.png" alt="" srcset="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid d-block" src="../img/assets/GAME.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- END CAROUSEL2 -->       
+        </section>
+
+<!-- SECCION 3 -  WHO IS ULPO -->
+        <section id="whoIs" class="container-fluid px-0">
+            <div class="row up gx-0">
+                <div class="d-none d-lg-flex col-lg-4">
+                    <img class="img-fluid" src="/img/assets/Who_dis_dos.png" alt="" srcset="">
+                </div>
+                <div id="whoIsTitle" class="col-10 mt-5 col-lg-3 ">
+                    <img class="img-fluid mt-5" src="../img/assets/Who_dis_Tittle.png" alt="" srcset="">
+                </div>
+                <div class="col-8 col-lg-3 mt-5">
+                    <p class="ulpoText whoIstText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum tenetur dolore facere pariatur quae numquam explicabo quod repudiandae modi consequatur, similique repellat, molestias in facilis at vel aspernatur officia ab.
+                    Libero vitae officiis, nisi quaerat, consequatur perspiciatis distinctio maxime accusantium quisquam, animi accusamus deleniti quia pariatur mollitia exercitationem sit eos commodi reiciendis? </p>
+                    <p class="ulpoText whoIstText">Lorem ipsum, <strong>dolor sit amet consectetur adipisicing elit. Earum tenetur dolore </strong>facere pariatur quae numquam explicabo quod repudiandae modi consequatur, similique repellat, molestias in facilis at vel aspernatur officia ab.
+                        Libero vitae officiis, nisi quaerat, consequatur perspiciatis distinctio maxime accusantium quisquam, animi accusamus deleniti quia pariatur mollitia exercitationem sit eos commodi reiciendis? </p>
+                        <img class="text-center img-fluid" src="/img/assets/Who_dis_boton.png" alt="" srcset="">
+                        <p class="about-us-text">ABOUT US</p>    
+                </div>
+            </div>
+        </section>
+
+<!-- SECCION 4 -  CLIENTS -->
+            <section id="clients" class="container-fluid px-0"> 
+                <div id="clientsRow" class="row mt-5 gx-0 justify-content-center">
+                    <div class="d-none d-lg-flex col-lg-3 mt-lg-5"></div>
+                    <div class="col-8 mt-lg-5">
+                        <img id="clientBubble" class="img-fluid" src="/img/assets/Clients_bubble.png" alt="" srcset="">
+                    </div>
+                    <div class="col-8 col-lg-1 mt-lg-5">
+                        <p id="ourClientsText">
+                            <strong>From publisher to personal projects we always give our best to be a great partner!</strong>
+                        </p>
+                    </div>    
+                </div>
+<!-- CAROUSEL3 -->
+                <div class="row justify-content-center mt-5 gx-0">
+                    <div class="col-9 col-lg-4">
+                        <div id="slider3" class="carousel slide" data-bs-ride="carousel">
+                            <ol id="indicators3" class="carousel-indicators">
+                                <li type="button" data-bs-target="#slider3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+                                <li type="button" data-bs-target="#slider3" data-bs-slide-to="1" class="" aria-label="Slide 2"></li>
+                                <li type="button" data-bs-target="#slider3" data-bs-slide-to="2" class="" aria-label="Slide 3"></li>
+                                <li type="button" data-bs-target="#slider3" data-bs-slide-to="3" class="" aria-label="Slide 4"></li>
+                                <li type="button" data-bs-target="#slider3" data-bs-slide-to="4" class="" aria-label="Slide 5"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/assets/Clients_testimonio.png" class="img-fluid d-block" alt="...">
+                                    <div class="carousel-content-title">
+                                        <p class="clients-title">RATALAIKA</p>
+                                    </div>
+                                    <div class="carousel-content clients-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia veniam itaque, modi id alias ratione dolorum nesciunt?</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/assets/Clients_testimonio.png" class="img-fluid d-block" alt="...">
+                                    <div class="carousel-content-title">
+                                        <p class="clients-title">RATALAIKA</p>
+                                    </div>
+                                    <div class="carousel-content clients-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia veniam itaque, modi id alias ratione dolorum nesciunt?</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/assets/Clients_testimonio.png" class="img-fluid d-block" alt="...">
+                                    <div class="carousel-content-title">
+                                        <p class="clients-title">RATALAIKA</p>
+                                    </div>
+                                    <div class="carousel-content clients-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia veniam itaque, modi id alias ratione dolorum nesciunt?</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/assets/Clients_testimonio.png" class="img-fluid d-block" alt="...">
+                                    <div class="carousel-content-title">
+                                        <p class="clients-title">RATALAIKA</p>
+                                    </div>
+                                    <div class="carousel-content clients-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia veniam itaque, modi id alias ratione dolorum nesciunt?</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/assets/Clients_testimonio.png" class="img-fluid d-block" alt="...">
+                                    <div class="carousel-content-title">
+                                        <p class="clients-title">RATALAIKA</p>
+                                    </div>
+                                    <div class="carousel-content clients-text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia veniam itaque, modi id alias ratione dolorum nesciunt?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- END CAROUSEL3 -->
+            </section>
+
+        <!-- SECCION 5 -  OUR VISION -->
+        <section id="ourVision" class="container-fluid px-0">
+            <div class="row justify-content-center gx-0">
+                <div id="ourVisionText" class="col-8 mt-5 mt-lg-0 col-lg-2">
+                    <img id="" class="img-fluid" src="../img/assets/OurVision_title.png" alt="" srcset="">
+                    <div class="our-vision-content">
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit totam inventore perferendis 
+                            aliquid veritatis magni magnam eos iure? Esse perspiciatis suscipit autem doloremque earum laborum.</p>
+                        <p class="text-center">Tenetur culpa reiciendis ad ipsum fuga! Rerum beatae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0">
+                <div class="col-2">
+                    <img id="platform1" class="img-fluid" src="../img/assets/OurVision_3D_3.png" alt="" srcset="">
+                </div>
+                <div class="col-2">
+                    <img id="platform2" class="img-fluid" src="../img/assets/OurVision_3D_2.png" alt="" srcset="">
+                </div>
+                <div class="col-8">
+                    <img id="platform3" class="img-fluid" src="../img/assets/OurVision_3D_1.png" alt="" srcset="">
+                </div>
+            </div>
+        </section>
+
+<!-- SECCION 6 -  FOOTER/GAME -->
+        <section id="footerGame" class="container-fluid px-0">
+            <div class="row justify-content-center gx-0">
+                <div class="col-2 col-lg-1 mt-lg-5">
+                    <img id="bee" class="img-fluid" src="../img/assets/Footer_Game_Bee.png" alt="" srcset="">
+                    <img id="turnip" class="img-fluid" src="../img/assets/Footer_Game_item.png" alt="" srcset="">
+                </div>
+            </div>
+            <div class="row woods gx-0">
+                    <img class="img-fluid woods" src="../img/assets//Footer_Game_Foreground.png" alt="" srcset="">
+                </div>
+            </div>    
+        </section>
+
+<!-- SCRIPTS -->
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>   
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
