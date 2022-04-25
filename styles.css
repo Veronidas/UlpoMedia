@@ -308,7 +308,7 @@ body {
     
     #clients{
         min-height: 1500px;
-        margin-top: -200px;
+        margin-top: -400px;
         z-index: -300px;
         margin-bottom: -1000px;
     }
