@@ -73,7 +73,7 @@ body {
 }
 
 #games {
-    background: rgb(232, 238, 240) url("../img/assets/Game_BG.png") no-repeat;
+    background: rgb(232, 238, 240) url("./img/assets/Game_BG.png") no-repeat;
     background-size: 100%;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 #clients {
-    background: rgb(232, 238, 240) url("../img/assets/OurVision_BG.png") no-repeat;
+    background: rgb(232, 238, 240) url("./img/assets/OurVision_BG.png") no-repeat;
     background-size: 100%;
 }
 
@@ -267,7 +267,7 @@ body {
     }
     
     #ourVision{
-        background: rgb(232, 238, 240) url("../img/assets/Ourvision_Halftone.png") no-repeat;
+        background: rgb(232, 238, 240) url("./img/assets/Ourvision_Halftone.png") no-repeat;
         background-size: 100%;
     }
 }
