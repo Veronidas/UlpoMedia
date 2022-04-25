@@ -118,7 +118,7 @@ body {
 }
 
 #footerGame {
-    background: rgb(232, 238, 240) url("../img/assets/Footer_Game_BG.png") no-repeat;
+    background: rgb(232, 238, 240) url("./img/assets/Footer_Game_BG.png") no-repeat;
     background-size: 100%;
 }
 
