@@ -19,30 +19,35 @@
 <body>
 
 <!-- NAVBAR -->
-    <nav id="navbar" class="navbar d-none d-lg-flex navbar-expand-lg bg-red justify-content-center w-100">
+    <nav id="navbar" class="navbar d-none d-lg-flex navbar-expand-lg bg-red justify-content-center w-100 fixed-top">
             <div class="align-items-center">
                 <ul class="navbar-nav">
                     <li class="nav-item active px-3">
-                        <a class="nav-link text-white" aria-current="page" href="#hero">Home</a>
+                        <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:5500/index.html">Home</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link text-white" aria-current="page" href="#hero">Juegos</a>
+                        <div class="dropdown">
+                            <a id="dropdownMenuButton1" class="nav-link text-white" aria-current="page"  data-bs-toggle="dropdown" aria-expanded="false">Juegos</a>
+                            <ul class="dropdown-menu bg-red" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item nav-link text-white" href="http://127.0.0.1:5500/games.html">Dana</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li id="logo" class="nav-item px-3">
                         <a class="nav-link" href="#"><img class="" style="width: 100%" src="./img/assets/Web_Logo.png" alt="" srcset=""></a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link text-white" aria-current="page" href="#hero">Quienes Somos</a>
+                        <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:5500/index.html#whoIs">Quienes Somos</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link text-white" aria-current="page" href="#hero">Contacto</a>
+                        <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:5500/index.html">Contacto</a>
                     </li>
                 </ul>
             </div>
     </nav>
 
 <!-- MOBILE NAVBAR -->
-<nav class="navbar d-lg-none bg-red justify-content-center w-100">
+<nav class="navbar d-lg-none bg-red justify-content-center w-100 fixed-top">
     <a href="#" class="navbar-brand"><img class="logo" style="width: 80%" src="./img/assets/Web_Logo.png" alt="" srcset=""></a>
     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-expanded="false" aria-controls="navbar">
         <span class="navbar-toggler-icon"></span>
@@ -50,16 +55,21 @@
     <div id="navCollapse" class="collapse navbar-collapse align-items-center">
         <ul class="navbar-nav">
             <li class="nav-item active px-3">
-                <a class="nav-link text-white" aria-current="page" href="#hero">Home</a>
+                <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:5500/index.html">Home</a>
             </li>
             <li class="nav-item px-3">
-                <a class="nav-link text-white" aria-current="page" href="#hero">Juegos</a>
+                <div class="dropdown">
+                    <a id="dropdownMenuButton1" class="nav-link text-white" aria-current="page"  data-bs-toggle="dropdown" aria-expanded="false">Juegos</a>
+                    <ul class="dropdown-menu bg-red" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item nav-link text-white" href="http://127.0.0.1:5500/games.html">Dana</a></li>
+                    </ul>
+                </div>
             </li>
             <li class="nav-item px-3">
-                <a class="nav-link text-white" aria-current="page" href="#hero">Quienes Somos</a>
+                <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:5500/index.html#whoIs"">Quienes Somos</a>
             </li>
             <li class="nav-item px-3">
-                <a class="nav-link text-white" aria-current="page" href="#hero">Contacto</a>
+                <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:5500/index.html">Contacto</a>
             </li>
         </ul>
     </div>
@@ -71,7 +81,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./img/assets/SLIDER1_tentativo.png" class="d-block w-100" alt="...">
-                </div>9
+                </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -264,16 +274,30 @@
 
 <!-- SECCION 6 -  FOOTER/GAME -->
         <section id="footerGame" class="container-fluid px-0">
-            <div class="row justify-content-center gx-0">
-                <div class="col-2 col-lg-1 mt-lg-5">
-                    <img id="bee" class="img-fluid" src="./img/assets/Footer_Game_Bee.png" alt="" srcset="">
-                    <img id="turnip" class="img-fluid" src="./img/assets/Footer_Game_item.png" alt="" srcset="">
+            <div class="row gx-0 indicator-box">
+                <div class="col-1">
+                    <div id="counter" class="indicator-game">
+                        <img class="img-fluid" style="max-width: 30%" src="./img/assets/Footer_Game_item.png" alt="">
+                        <span>
+                            0
+                        </span>
+                    </div>
+                    <div class="indicator-game">
+                        <img class="img-fluid" style="max-width: 30%" src="./img/assets/sand-clock.svg" alt="">
+                        <span>00:01:00</span>                       
+                    </div>
                 </div>
             </div>
-            <div class="row woods gx-0">
+            <div class="row gx-0 game">
+                <div class="turnips"></div>
+                <div class="danger-line"></div>
+                <div class="dana"></div>
+            </div>    
+            <!-- <div class="row justify-content-center gx-0 woods">
+                <div class="mt-lg-5">
                     <img class="img-fluid woods" src="./img/assets//Footer_Game_Foreground.png" alt="" srcset="">
                 </div>
-            </div>    
+            </div>     -->
         </section>
 
 <!-- SCRIPTS -->
@@ -282,5 +306,8 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- <script src="app.js"></script>  -->
+
+
 </body>
 </html>

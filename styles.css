@@ -1,3 +1,5 @@
+/* GENERAL */
+
 *{
     padding: 0;
     margin: 0;
@@ -117,10 +119,86 @@ body {
     background-size: 100%;
 }
 
-#footerGame {
-    background: rgb(232, 238, 240) url("./img/assets/Footer_Game_BG.png") no-repeat;
-    background-size: 100%;
+#game-hero-title{
+    margin-top: -20px
 }
+
+#hero-game {
+    background: rgb(232, 238, 240) url(./img/assets/Game_BG.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.game-sheet {
+    position: relative;
+    display: inline-block;
+}
+
+img #fact-sheet{
+    display: block;
+}
+.game-sheet-text {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate( -50%, -50% );
+    color: rgb(10, 10, 10);
+}
+
+.game-section-title{
+    color: #FF4200;
+    font-size: 40px;
+}
+
+.credit-section-title{
+    font-size: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.credits p {
+    margin-left: 30px;
+}
+
+#images {
+    background: url(./img/assets/Who_dis_dos.png) no-repeat;
+}
+
+#logos {
+    background: url(./img/assets/Ourvision_Halftone.png) right no-repeat ;
+}
+
+#credits {
+    background: url(./img/assets/Footer_Game_BG.png) no-repeat;
+}
+
+#hero-game {
+    margin-top: 150px;
+}
+
+/* END OF GENERAL */
 
 /* ANIMATIONS */
 
@@ -224,6 +302,71 @@ body {
     }
 }
 
+/* END OF ANIMATIONS */
+
+/* GAME */
+
+.game {
+    position: relative;
+    border: 2px red solid;
+    height: 1050px;
+    background-image: url(./img/assets/solidFooter.png);
+    z-index: -1;
+}
+
+.danger-line{
+    width: 100%;
+    height: 15px;
+    background-color: red;
+    position: absolute;
+    bottom: 60px;
+}
+
+.dana {
+    width: 50px;
+    height: 110px;
+    position: absolute;
+    background-image: url(./img/assets/dana.png);
+    bottom: 60px;
+    left: 250px;
+    z-index: 1;
+}
+
+.turnip {
+    width: 40px;
+    height: 45px;
+    background-image: url(./img/assets/Footer_Game_item.png);
+    position: absolute;
+}
+
+/* END OF GAME */
+
+/* PRETEST GAME */
+
+
+.indicator-game{
+    border: 4px solid rgba(235, 115, 16, 0.932);
+    border-radius: 5%;
+    padding: 2px;
+    margin: 15px;
+    background-color: rgba(235, 115, 16, 0.932);
+    color: #ffffff;
+}
+
+.indicator-game span {
+    margin-left: 15px ;
+}
+
+.indicator-box{
+    margin-bottom: -350px;
+}
+
+#count {
+    margin-left: 54px ;
+} 
+
+/* END OF PRETEST GAME */
+
 /* MEDIA QUERIES */
 
 /* Extra small devices (phones, 600px and down) */
@@ -277,8 +420,6 @@ body {
     #turnip{
         max-width: 70%;
     }
-
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -331,6 +472,9 @@ body {
         text-align: center;
     }
 
+    .img-section {
+        margin-bottom: 20px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -364,6 +508,10 @@ body {
         margin-right: -100px;
     }
 
+    #hero{
+        margin-top: 55px;
+    }
+
     #whoIs div{
         justify-content: center;
     }
@@ -379,6 +527,18 @@ body {
     .about-us-text {
         font-size: 40px;
         margin-top: -115px;
+    }
+
+    .game-sheet-text {
+        top: 45%;
+        font-size: 20px;
+    }
+    .game-sheet-title{
+        font-size: 25px;
+    }
+
+    .first-row {
+        margin: 20px 0;
     }
 }
 
@@ -451,3 +611,4 @@ body {
     }
 }
 
+/* END OF MEDIA QUERIES */
