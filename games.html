@@ -20,24 +20,24 @@
     <nav id="navbar" class="navbar d-none d-lg-flex navbar-expand-lg bg-red justify-content-center w-100 fixed-top">
         <div class="align-items-center">
             <ul class="navbar-nav">
-                <li class="nav-item active px-3">
+                <li class="nav-item active px-3 li-hov">
                     <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:5500/index.html">Home</a>
                 </li>
-                <li class="nav-item px-3">
+                <li class="nav-item px-3 li-hov">
                     <div class="dropdown">
                         <a id="dropdownMenuButton1" class="nav-link text-white" aria-current="page"  data-bs-toggle="dropdown" aria-expanded="false">Juegos</a>
                         <ul class="dropdown-menu bg-red" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item nav-link text-white" href="http://127.0.0.1:5500/games.html">Dana</a></li>
+                            <li class="li-hov"><a class="dropdown-item nav-link text-white" href="http://127.0.0.1:5500/games.html">Dana</a></li>
                         </ul>
                     </div>
                 </li>
-                <li id="logo" class="nav-item px-3">
+                <li id="logo" class="nav-item px-3 li-hov">
                     <a class="nav-link" href="http://127.0.0.1:5500/index.html"><img class="" style="width: 100%" src="./img/assets/Web_Logo.png" alt="" srcset=""></a>
                 </li>
-                <li class="nav-item px-3">
+                <li class="nav-item px-3 li-hov">
                     <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:5500/index.html#whoIs">Quienes Somos</a>
                 </li>
-                <li class="nav-item px-3">
+                <li class="nav-item px-3 li-hov">
                     <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:5500/index.html"">Contacto</a>
                 </li>
             </ul>
@@ -52,21 +52,21 @@
 </button>
 <div id="navCollapse" class="collapse navbar-collapse align-items-center">
     <ul class="navbar-nav">
-        <li class="nav-item active px-3">
+        <li class="nav-item active px-3 li-hov">
             <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:5500/index.html">Home</a>
         </li>
-        <li class="nav-item px-3">
+        <li class="nav-item px-3 li-hov">
             <div class="dropdown">
                 <a id="dropdownMenuButton1" class="nav-link text-white" aria-current="page"  data-bs-toggle="dropdown" aria-expanded="false">Juegos</a>
                 <ul class="dropdown-menu bg-red" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item nav-link text-white" href="http://127.0.0.1:5500/games.html">Dana</a></li>
+                    <li class="li-hov"><a class="dropdown-item nav-link text-white" href="http://127.0.0.1:5500/games.html">Dana</a></li>
                 </ul>
             </div>
         </li>
-        <li class="nav-item px-3">
+        <li class="nav-item px-3 li-hov">
             <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:5500/index.html#whoIs">Quienes Somos</a>
         </li>
-        <li class="nav-item px-3">
+        <li class="nav-item px-3 li-hov">
             <a class="nav-link text-white" aria-current="page" href="http://127.0.0.1:5500/index.html"">Contacto</a>
         </li>
     </ul>
@@ -79,7 +79,7 @@
         <img id="game-hero-title" src="./img/assets/logodana.png" style="max-width: 50%;" alt="" srcset="">
     </div>
     <div class="row gx-0 justify-content-center">
-        <div class="col-10 col-lg-3 mt-4">
+        <div class="col-10 col-lg-5 col-xl-4 mt-4 fact-sheet">
             <div class="game-sheet">
                 <img id="fact-sheet" class="img-fluid" src="./img/assets/factSheet.png" alt="" srcset="">
                 <div class="game-sheet-text">
@@ -101,7 +101,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-10 col-lg-3">
+        <div class="col-10 col-lg-5 col-xl-3">
             <div class="mt-4">
                 <p class="game-section-title">
                     DESCRIPTION
@@ -120,13 +120,13 @@
                 </p>
                 <p class="game-section-content">
                     <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                     </ul>
                 </p>
             </div>
@@ -434,7 +434,13 @@
 
 <!-- FOOTER -->
 
-
+<footer id="footer" class="my-5">
+    <div class="row justify-content-center gx-0">
+        <div class="col-12 text-center mt-5 p-5">
+            ©2022 ULPOMEDIA SPA. ALL RIGHTS RESERVED.
+        </div>
+    </div>
+</footer>
 
 <!-- SCRIPTS -->
 <script
